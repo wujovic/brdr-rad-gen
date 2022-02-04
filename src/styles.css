@@ -1,0 +1,109 @@
+:root {
+  --main-bck: #93B5C6;
+  --main-text: #4a4d55;
+  --main-box: #E4D8DC;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Fira Code', monospace;
+  background-color: var(--main-bck);
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+  color: var(--main-text);
+}
+
+p {
+  margin: 0;
+  padding: 0;
+  color: var(--main-text);
+}
+
+/* Custom Components */
+
+#app {
+  height: 100vh;
+  margin: 2rem auto;
+  text-align: center;
+}
+
+.box-container {
+  margin: 5rem auto;
+
+  /* Flex */
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+/* Box Components */
+
+/* Left Boxes */
+.left-boxes {
+  height: 15rem;
+  width: 1.5rem;
+
+  /* Flex */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+#left-up-box {
+  height: 25px;
+  width: 25px;
+  background-color: white;
+}
+
+#left-down-box {
+  height: 25px;
+  width: 25px;
+  background-color: white;
+}
+
+/* Main Box */
+.main-box {
+  height: 15rem;
+  width: 25rem;
+  background-color: var(--main-box);
+
+  /* Shadow */
+  -webkit-box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.34);
+  box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.34);
+}
+
+.inner-main-box {
+  height: 11rem;
+  margin: 2rem;
+  border: 1px solid var(--main-bck);
+  background-color: white;
+}
+
+/* Right Boxes */
+.right-boxes {
+  height: 15rem;
+  width: 1.5rem;
+
+  /* Flex */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+#right-up-box {
+  height: 25px;
+  width: 25px;
+  background-color: white;
+}
+
+#right-down-box {
+  height: 25px;
+  width: 25px;
+  background-color: white;
+}
