@@ -55,7 +55,12 @@ export default function PreviewBox() {
                     borderBottomRightRadius: bottomRightBorderNum + 'px'
                 }
             }>
-                <div className='inner-main-box'></div>
+                <div className='inner-main-box'>
+                    <p>border-top-left-radius: {topLeftBorderNum}px</p>
+                    <p>border-bottom-left-radius: {bottomLeftBorderNum}px</p>
+                    <p>border-top-rgght-radius: {topRightBorderNum}px</p>
+                    <p>border-bottom-right-radius: {bottomRightBorderNum}px</p>
+                </div>
             </div>
 
             <div className='right-boxes'>
