@@ -2,10 +2,10 @@ import { useState } from "react"
 
 export default function PreviewBox() {
 
-    const [topLeftBorderNum, setTopLeftBorderNum] = useState();
-    const [bottomLeftBorderNum, setBottomLeftBorderNum] = useState();
-    const [topRightBorderNum, setTopRightBorderNum] = useState();
-    const [bottomRightBorderNum, setBottomRightBorderNum] = useState();
+    const [topLeftBorderNum, setTopLeftBorderNum] = useState("");
+    const [bottomLeftBorderNum, setBottomLeftBorderNum] = useState("");
+    const [topRightBorderNum, setTopRightBorderNum] = useState("");
+    const [bottomRightBorderNum, setBottomRightBorderNum] = useState("");
 
     function handleTopLeftChange(event: any) {
         setTopLeftBorderNum(event.target.value);
