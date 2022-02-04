@@ -1,11 +1,16 @@
+import { useState } from "react"
+
 export default function PreviewBox() {
+
+    const [border, setBorder] = useState();
+
     return (
         <div className='box-container'>
 
             <div className='left-boxes'>
 
-                <div id="left-up-box" className="small-box">100</div>
-                <div id="left-down-box" className="small-box">0</div>
+                <input id="left-up-box" className="small-box" />
+                <input id="left-down-box" className="small-box" />
 
             </div>
 
@@ -17,8 +22,8 @@ export default function PreviewBox() {
 
             <div className='right-boxes'>
 
-                <div id="right-up-box" className="small-box">0</div>
-                <div id="right-down-box" className="small-box">0</div>
+                <input id="right-up-box" className="small-box" />
+                <input id="right-down-box" className="small-box" />
 
             </div>
 

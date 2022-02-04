@@ -24,12 +24,19 @@ p {
   color: var(--main-text);
 }
 
+input:focus {
+  outline: none;
+}
+
 /* Custom Components */
 
 #app {
   height: 100vh;
-  margin: 2rem auto;
   text-align: center;
+}
+
+.heading {
+  padding-top: 2rem;
 }
 
 .box-container {
