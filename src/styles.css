@@ -1,5 +1,6 @@
 :root {
   --main-bck: #93B5C6;
+  --scnd-bck: #51778a;
   --main-text: #4a4d55;
   --main-box: #E4D8DC;
 }
@@ -40,6 +41,23 @@ p {
   gap: 1rem;
 }
 
+.small-box {
+  height: 1.2rem;
+  width: 1.7rem;
+  font-size: 0.9rem;
+  padding: 0.1rem;
+  background-color: var(--scnd-bck);
+  border: 1px solid var(--main-text);
+  color: white;
+  text-align: center;
+  vertical-align: middle;
+
+  /* Flex */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 /* Box Components */
 
 /* Left Boxes */
@@ -51,19 +69,7 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: flex-end;
-}
-
-#left-up-box {
-  height: 25px;
-  width: 25px;
-  background-color: white;
-}
-
-#left-down-box {
-  height: 25px;
-  width: 25px;
-  background-color: white;
+  align-items: center;
 }
 
 /* Main Box */
@@ -94,16 +100,4 @@ p {
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
-}
-
-#right-up-box {
-  height: 25px;
-  width: 25px;
-  background-color: white;
-}
-
-#right-down-box {
-  height: 25px;
-  width: 25px;
-  background-color: white;
 }
